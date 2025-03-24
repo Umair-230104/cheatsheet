@@ -90,6 +90,8 @@
 
 
 ## SSH
+| Kommando | Beskrivelse | Nyttige flags |
+|----------|-------------|---------------|
 | `ssh -i <id_rsa> <user>@<ip>`                   | Opretter SSH-forbindelse med privat nøgle (id_rsa).        | `-i`: Angiver privat nøgle-fil (id_rsa).                      |
 | `ssh2john <id_rsa> > <hash_name>`               | Konverterer SSH-privatnøgle til format for John the Ripper.| Ingen ekstra flags nødvendige (output omdirigeres til fil).   |
 | `john --wordlist=<wordlist> <hash_name>`        | Cracker SSH-privatnøgle (password) med ordliste.           | `--wordlist`: Bruger angivet ordliste til cracking.           |
