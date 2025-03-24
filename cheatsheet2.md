@@ -56,7 +56,7 @@
 | `uname -a`                             | Viser information om systemet (OS, kerneversion m.m.).            |
 | `cat /etc/issue`                       | Viser information om operativsystemets distribution.              |
 | `cat /etc/passwd`                      | Lister alle systembrugere.                                        |
-| `sudo -l`                              | Viser hvilke kommandoer brugeren kan køre med root/sudo-rettigheder. |
+| `sudo -l`                              | Viser hvilke kommandoer brugeren kan køre med root/sudo-rettigheder.                                                                                                                                                |
 | `id`                                   | Viser nuværende brugers ID samt gruppetilhørsforhold.             |
 | `crontab -l`                           | Lister cronjobs (planlagte opgaver) for nuværende bruger.         |
 | `cat /etc/crontab`                     | Viser systemets cronjobs, som muligvis kører med højere privilegier. |
@@ -70,7 +70,7 @@
 | `pwd`                           | Viser nuværende mappe                    | Ingen flags nødvendige                |
 | `cd <mappe>`                    | Skifter mappe                            | Brug `..` for mappe op                |
 | `cat <fil>`                     | Viser indhold af en fil                  | Ingen flags nødvendige                |
-| `nano <fil>`                    | Enkel teksteditor til at redigere filer  | Ingen flags nødvendige                |
+| `nano <fil>`                    | Enkel teksteditor til at redigere filer  | Ingen flags nødvendige                                                                                                                                                                |
 | `touch <fil>`                   | Opretter tom fil                         | Ingen flags nødvendige                |
 | `mkdir <mappe>`                 | Opretter en ny mappe                     | `-p`: opretter mellemmapper           |
 | `rm <fil>`                      | Sletter fil                              | `-r`: rekursivt (mapper)<br>`-f`: tvinger sletning |
